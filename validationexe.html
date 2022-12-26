@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Registration</h1>
+    <form action="">
+      
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" required >
+      </div>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" required pattern="[A-Za-z]+" >
+      </div>
+      <div>
+        <label for="last">Last Name</label>
+        <input type="text" name="last" required pattern="[A-Za-z]+" >
+      </div>
+      <div>
+        <label for="birth">Date Of Birth</label>
+        <input type="date" name="birth" required>
+      </div>
+      <div>
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" required>
+      </div>
+      <div>
+        <p>Choose your plan:</p>
+        <input type="radio" name="plan" value="free" id="free" required>
+        <label for="free">free plan.</label>
+        <input type="radio" name="plan" value="group" id="group" required>
+        <label for="group">a group of 3 plans with increasing price.</label>
+        <input type="checkbox" name="plan" value="pro" id="pro">
+        <label for="pro">Pro Plan</label>
+      </div>
+      <br>
+      <div>
+        <label for="credit">Credit Card Number</label>
+        <input type="tel" name="credit" id="" required maxlength="16">
+        <label for="cvv">CVV</label>
+        <input type="tel" name="cvv" id="" required maxlength="3" minlength="3">
+        <label for="expiration">Expiration</label>
+        <select name="expiration" id="" required>
+          <option>jan</option>
+          <option>feb</option>
+          <option>mar</option>
+          <option>apr</option>
+          <option>may</option>
+          <option>jun</option>
+          <option>jul</option>
+          <option>agu</option>
+          <option>sep</option>
+          <option>oct</option>
+          <option>nov</option>
+          <option>dec</option>
+        </select>
+        <select name="expiration" id="">
+          <option>2022</option>
+          <option>2023</option>
+          <option>2024</option>
+          <option>2025</option>
+          <option>2026</option>
+          <option>2027</option>
+          <option>2028</option>
+          <option>2029</option>
+          <option>2030</option>
+          <option>2031</option>
+        </select>
+      </div>
+      <div>
+        <p>Billing Adress</p>
+        <textarea name="" id="" cols="30" rows="10" required></textarea>
+      </div>
+
+      <div>
+        <button>Register</button>
+      </div>
+
+    </form>
+  </body>
+</html>
